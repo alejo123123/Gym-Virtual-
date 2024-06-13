@@ -1,0 +1,94 @@
+
+
+.caja2 {
+    //caracteristicas caja 2
+        text-align: center;
+        height: 50rem;
+        width: 80%;
+        background-color: $grisOscuro;
+        padding: 20px;
+        border-radius: 50px;
+        margin-left:10%;
+        margin-bottom: 40rem;
+        margin-top: 10rem;
+  
+       //grueso en el input
+        input {
+            font-weight: 700;
+        }
+        
+
+        //en pc
+        @include tablet {
+        // margin-bottom: 16rem;
+        // margin-top: 20rem;
+        // margin-left: 37rem;
+        // margin: auto;
+        padding: 60px;
+        width: 80%;
+        }
+
+      
+
+        //imagen
+        .img2 {
+            margin-bottom: 10rem;
+            height: 13rem;
+            width: 15rem; 
+        }
+       
+        
+        //contiene los campos
+    .contenedor {
+        //para que este de forma de columna
+        display: flex;
+        flex-direction: column; 
+           
+        .boton {
+            background-color: $blanco;
+            transition: color 0.3s ease;
+        }
+    
+        .boton:hover {
+            color: $blanco;
+            background-color:$principal;
+            cursor: pointer;
+        }
+        }
+
+        //donde se escriben los valores
+        .campos {
+            margin-bottom: 5rem;
+            width: 100%;
+           height: 5rem;
+           border-radius: 20px;
+
+           
+        }
+
+        //el campo de kilos no tengo margen
+        .kilos {
+            margin: 0;
+             }
+
+            //el campo de libras tenga margen arriba
+           .libras {
+            margin-top: 1rem;
+        }
+        
+        
+    }
+    //parte del footer 
+    .footer2 {
+        margin-top: 10rem;
+        @include tablet {
+            
+
+            p {
+                padding-top: 21rem;
+                margin-top: 21rem;
+            }
+        }
+    }
+
+

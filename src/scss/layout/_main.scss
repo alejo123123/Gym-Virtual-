@@ -1,0 +1,388 @@
+.margen {
+
+    @include tablet {
+        margin-left: 8rem;
+        margin-right: 8rem;
+
+    }
+   
+}
+.header {
+    //color de fondo y linea 
+    background-image: linear-gradient(to bottom, $grisOscuro 1%,  #395B64 100%);
+    border-bottom: 2px solid rgb(255, 252, 252); 
+    padding-bottom: 1rem; 
+
+
+
+
+    .barra {
+        .desp{
+            height: 10rem;
+            width: 10rem;
+        }
+
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+
+        }
+        
+    }
+
+    .esconder {
+        display: block;
+        @include tablet {
+            display:none;
+        }
+    }
+
+
+
+
+    //para los elemntos de la derecha
+   
+ 
+
+    .navegacion2 {
+
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            
+        }
+
+        .navegador {
+            text-align: center;
+            font-size: 2rem;
+            color: $blanco;
+            transition: color 0.3s ease;
+
+            @include tablet {
+                margin-right: 5rem;
+            }
+
+
+    
+            &:hover {
+                color: $principal;
+            }
+    
+            &:last-of-type {
+                margin: 0;
+            }
+        }
+    
+    }
+
+
+    .dentro {
+        display: none;
+        @include tablet }
+        display: block;
+            
+    }
+
+
+
+
+   //para el video
+    video {
+        
+                display: block;
+                width: 100%;
+                height: 80rem;
+                margin-top: 0;
+                border-radius: 50px;
+                transition: transform 0.3s ease-in-out;
+
+                @include tablet {
+                    margin-top: 4rem;
+                }
+            
+                &:hover {
+                    transform: scale(1.07);
+                }
+    }
+   
+
+   
+   
+    
+
+
+
+
+//para que lo que este dentro del span sea amarillo
+.span {
+    color: $amarillo;
+}
+
+//sedes
+.sedes {
+    //el texto se centre
+    text-align: center;
+
+    h2 {
+        font-weight: 500;
+        margin-bottom: 3rem;
+        
+     }
+
+    img {
+        
+        display: none;
+       
+    }
+    //para el boton de sedes
+    .boton {
+        width: 50%;
+        height: 5rem;
+        border-radius: 70px;
+        background-color: $blanco;
+
+        &:hover {
+            color: $blanco;
+            background-color:$principal;
+            cursor: pointer;
+
+        }
+    }
+
+    //para un dispositivo grande
+    @include tablet {
+
+        //para la imagen de sedes
+        .imagenrock {
+            width: 97%;
+            height: 40rem;
+            border-radius: 50px;
+            position: relative;
+            display: block;
+            transition: transform 0.3s ease-in-out;
+            
+            
+            &:hover {
+                transform: scale(1.02);
+            }
+        }
+
+
+             
+            .boton { 
+                position: absolute;
+                bottom: -20rem;
+                width: 30%;
+                height: 5rem;
+                border-radius: 70px;
+                left: 65rem;
+                background-color: $blanco;
+                 transition: background-color 0.3s ease;      
+                   
+            }
+     
+         }     
+    
+
+    }
+
+
+//seccion que quienes somos
+.seccion {
+
+    text-align: center;
+    padding-bottom: 2rem;
+    margin-top: 6rem;
+
+    h2 {
+        font-size: 5rem;
+        font-weight: 500;
+        color: $gris;
+    }
+
+    p {
+        margin: 1rem;
+    }
+
+    //para que la imagen desaparezca en dispositivos pequenos
+    .imagenbox {
+        display: none;
+    }
+    
+     //para un dispositivo grande
+    @include tablet {
+        //dos columnas con un gap de 1 rem
+        @include grid(2, 1rem);
+        
+        h2 {
+            font-weight: 500;
+            font-size: 6rem;
+            margin-top: 5rem;
+            margin-bottom: 1rem;
+        }
+    
+        p {
+            margin: 7rem;
+        }
+
+        .imagenbox{
+            width: 90%;
+            height: 60rem;
+            border-radius: 50px;
+             transition: transform 0.3s ease-in-out;
+             display: block;
+            
+            
+            &:hover {
+                transform: scale(1.1);
+            }
+
+           
+            
+            .imagenbox:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        .logo {
+            width: 23rem;
+            height: 20rem;
+        }
+    }
+  
+    
+}
+
+
+//planes
+.planes {
+    text-align: center;
+    h3 {
+        margin-bottom: 0.5rem; 
+        color: #00FFFF;
+        font-size: 3.4rem;
+        
+    }
+    p {
+        margin-top: 0.5rem; 
+        // Hacer el precio en negrita para destacarlo
+        font-weight: 800; 
+    }
+    .plan-item {
+        border: 1px solid #ccc; // Borde alrededor de cada plan
+        padding: 1rem; // Espaciado interno para cada plan
+        text-align: center; 
+        margin-bottom: 2rem; 
+        margin-left: 1rem;
+        margin-right: 1rem;
+
+       
+      
+    }
+    //para un dispositivo grande
+    @include tablet {
+        .plan {
+            // cuatro columnas con un gap de 2 rem
+            @include grid(4, 2rem); 
+            // Espacio entre la sección de planes y los demás elementos
+            margin-top: 2rem;                     
+        }
+        }
+
+        //para el titulo de planes
+        h2 {
+            margin-top: 5rem;
+            text-align: center;
+            font-weight: 900;
+            .span {
+                color: $amarillo;
+            } 
+
+           
+            
+}
+} 
+
+//promociones
+.promociones {
+  
+        //en un dispositivo grande hayan 3 columnas
+        @include tablet {
+            @include grid(3, 2rem); 
+            // Espacio entre la sección de planes y los demás elementos
+            margin-top: 2rem; 
+        }
+
+        //el contenedor de cada uno
+    .prom-item {
+        border: 1px solid #ccc; 
+        padding: 1rem; 
+        text-align: center; 
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    
+    h3 {
+        margin-bottom: 0.5rem; 
+        text-align: center;
+        font-size: 3rem;
+        color: #00FF00;
+    }
+
+    p {
+        margin-top: 0.5rem; 
+        // Hacer el precio en negrita para destacarlo
+        font-weight: 800; 
+    }
+}
+}
+
+
+//empelados
+.empleados {
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    //en un dispositivo grande hayan 2 columnas 
+    @include tablet {
+        @include grid(2, 1rem);
+        
+            p {
+                margin-bottom: 2rem;
+            }
+        }
+
+
+    h3 {
+        color: #1E90FF;
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        color: $amarillo;
+    }
+
+    p {
+        margin-bottom: 1rem;
+
+    }
+
+    .emp-item {
+        background-color: $secundario;
+        margin: 2rem;
+        border-radius: 50px;
+    }
+   
+}
+
+
+.footmain {
+    p {
+        margin-top: 5rem;
+    }
+}

@@ -1,0 +1,57 @@
+//para el espacio del indice de masa corporal
+.indice {
+    margin-top: 3rem;
+    background-image: url('/src/img/pose2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    border-radius: 50px;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.01);
+    }
+
+    h2 {
+        color: $blanco;
+        text-align: center;
+        padding-top: 5rem;
+        text-transform: uppercase;
+        }
+
+}
+
+.lb {
+        margin-top: 3rem;
+        background-image: url('/src/img/mc.jpg');
+        background-color: $blanco;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 52rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        border-radius: 50px;
+        transition: transform 0.3s ease-in-out;
+
+        
+            &:hover {
+                transform: scale(1.01);
+            }
+
+        
+
+        @include tablet {
+            
+        }
+       
+        
+        h2 {
+            color: $negro;
+            text-align: center;
+            padding-top: 5rem;
+            text-transform: uppercase;
+            }
+    
+  }

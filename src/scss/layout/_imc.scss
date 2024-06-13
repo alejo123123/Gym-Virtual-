@@ -1,0 +1,111 @@
+
+//contenido total
+
+.content {
+     
+     @include tablet {
+        @include grid(2, 2rem);
+    margin-top: 3rem;
+
+     }
+    
+}
+
+//contenido imc
+.contentimc {
+    text-align: center;
+    margin: 2rem;
+    background-color: $secundario;
+    padding-bottom: 2rem;
+    border-radius: 50px;
+
+    h2 {
+        margin-bottom: 0;
+        color: $amarillo;
+    }
+
+    p {
+        margin-top: 0;
+        text-align: left;
+        margin-left: 4.5rem;
+    }
+    //donde se escribe
+    input {
+        width: 90%;
+        height: 4rem;
+    }
+
+    //boton
+    .boton {
+        background-color: $blanco;
+        transition: color 0.3s ease;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        width: 50%;
+       height: 5rem;
+       border-radius: 20px;
+
+       &:hover {
+        color: $blanco;
+        background-color:$principal;
+        cursor: pointer;
+    }
+    }
+
+   
+   
+}
+
+//para la general 
+.tabla {
+    text-align: center;
+    background-color: $blanco;
+    margin: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 50px;
+    // margin: auto;
+
+    .mal {
+        color: red;
+    }
+
+    .bien {
+        color: $verde;
+    }
+  
+    .superior {
+        color: $amarillo;
+    }
+
+    .obs {
+        color: red;
+    }
+    img {
+        margin-top: 5rem;
+    }
+
+  
+    //para lo que esta dentro de la tabla
+    table {
+        // margin-left: 30%;
+        padding: 10rem;
+        margin: auto;
+       
+       //para el titulo
+        .th {
+            
+            padding: 3rem;
+            border: 2px solid rgb(0, 0, 0); 
+            
+        }
+        //[para los cosos
+        td {
+            padding: 1rem;
+            border: 2px solid rgb(0, 0, 0); 
+        }
+        
+    }
+
+    
+}
+

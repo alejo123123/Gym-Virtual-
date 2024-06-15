@@ -12,7 +12,7 @@ $db = conectar(); // Se almacena la conexión en la variable $db
 <!-- imagen principal -->
 <div class="video">
    
-         <video autoplay muted>
+         <video autoplay muted loop>
             <source src="src/video/Sony A7S III X Fitness Commercial.mp4" type="video/mp4">
          </video>
 

@@ -4,7 +4,7 @@ require 'includes/config/database.php'; // Se incluye el archivo de configuraci�
 require 'includes/app.php'; // Se incluye el archivo principal de la aplicación
 include 'includes/templates/header.php'; // Se incluye el encabezado de la página
 
-// Establecer conexión a la base de datos utilizando la función conectar() definida en database.php
+// Establecer conexión git a la base de datos utilizando la función conectar() definida en database.php
 $db = conectar(); // Se almacena la conexión en la variable $db
 ?>
 
@@ -22,7 +22,7 @@ $db = conectar(); // Se almacena la conexión en la variable $db
 <div class="sedes">
 
     <h2>Encuentra la sede <span class="span">más cercana a ti</span></h2>
-    <img class='imagenrock' src="src/img/dwayne-johnson-haciendo-ejercicio_2560x1440_xtrafondos.com.jpg" alt="sede">
+    <img class='imagenrock' src="src/img/natalie-dormer-en-gimnasio_2880x1800_xtrafondos.com.jpg" alt="sede">
     <button class="boton" onclick="window.location.href='sedes.php'">Buscar Sedes</button>
 
 </div>

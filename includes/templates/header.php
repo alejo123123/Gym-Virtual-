@@ -33,4 +33,5 @@
         </div>
         
     </div>
+    <script src="src/js/barra.js"></script>
 </header>

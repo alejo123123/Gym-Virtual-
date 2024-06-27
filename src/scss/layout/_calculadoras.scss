@@ -1,57 +1,82 @@
 //para el espacio del indice de masa corporal
-.indice {
-    margin-top: 3rem;
-    background-image: url('/src/img/pose2.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 40rem;
-    margin-right: 2rem;
-    margin-left: 2rem;
-    border-radius: 50px;
-    transition: transform 0.3s ease-in-out;
 
-    &:hover {
-        transform: scale(1.01);
+.margen {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    @include tablet{
+        margin-left: 10rem;
+        margin-right: 10rem;
     }
 
-    h2 {
-        color: $blanco;
-        text-align: center;
-        padding-top: 5rem;
-        text-transform: uppercase;
-        }
 
 }
 
-.lb {
+.distribuir {
+    @include grid(1,1rem);
+  @include tablet {
+    @include grid(2,2rem);
+  }
+
+  .info {
+    text-align: center;
+    @include tablet {
+        text-align: left;
+    }
+    
+}
+
+  .calch {  
+    text-align: center;
+    margin-top: 6rem;
+
+    
+  }
+    .indice {
         margin-top: 3rem;
-        background-image: url('/src/img/mc.jpg');
-        background-color: $blanco;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 52rem;
+       background-color: $negro;
+        height: 20rem;
         margin-right: 2rem;
         margin-left: 2rem;
         border-radius: 50px;
         transition: transform 0.3s ease-in-out;
-
-        
-            &:hover {
-                transform: scale(1.01);
-            }
-
-        
-
-        @include tablet {
-            
+    
+        &:hover {
+            transform: scale(1.01);
         }
-       
-        
+    
         h2 {
-            color: $negro;
+            color: $blanco;
             text-align: center;
             padding-top: 5rem;
             text-transform: uppercase;
             }
     
-  }
+    }
+    
+
+  
+    .lb {
+            margin-top: 3rem;
+            background-color: $blanco;
+            height: 20rem;
+            margin-right: 2rem;
+            margin-left: 2rem;
+            border-radius: 50px;
+            transition: transform 0.3s ease-in-out;
+    
+            
+                &:hover {
+                    transform: scale(1.01);
+                }
+    
+           
+            
+            h2 {
+                color: $negro;
+                text-align: center;
+                text-transform: uppercase;
+                }
+        
+      }
+}
+

@@ -25,7 +25,7 @@
                 <nav id='nav' class="navegacion2 ">
                     <a class="navegador "  href="calculadoras.php">Calculadora</a>
                     <a class="navegador"  href="sedes.php">Sedes</a>
-                    <a class="navegador"  href="login.php">Cerrar Sesion</a>
+                    <a class="navegador"  href="login.php">Contactanos</a>
 
                 </nav>
 

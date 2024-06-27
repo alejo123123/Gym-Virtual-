@@ -6,24 +6,10 @@ require 'includes/app.php'; // Se incluye el archivo principal de la aplicación
 $db = conectar(); // Se almacena la conexión en la variable $db
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="build/css/app.css">
-    <title>gym</title>
-</head>
-<body class="cuerpo">
+<?php 
 
-      <!-- barra de navegacion -->
-    <header class="header"> 
-        <div class="navegacion">
-            
-     <h1 ><a class="titulo" href="login.php"RegisterGym>RegisterGym</a></h1>
-    
-        </div>
-    </header>
+include 'includes/templates/header.php';
+?>
 
             <!-- logo -->
           <img src="src/img/maquina-de-gimnasio.png" class="img" alt="logo">
@@ -31,12 +17,12 @@ $db = conectar(); // Se almacena la conexión en la variable $db
 <!-- el login -->
         <main class="login contenedor">
          <div class="caja">
-             <h1>Login</h1>
+             <h1>Contacto</h1>
 
 <form action="index.php" method="POST">
 
              <div class="input">
-                <input id="correo" type="text" placeholder="Correo Electronico" required>
+                <input id="correo" type="text" placeholder="Nombre" required>
                 <svg class="icons" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-hexagon" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <path d="M12 13a3 3 0 1 0 0 -6a3 3 0 0 0 0 6z" />
@@ -47,7 +33,7 @@ $db = conectar(); // Se almacena la conexión en la variable $db
 
 
              <div class="input">
-               <input id="contra" type="text" placeholder="Contraseña" required>
+               <input id="contra" type="text" placeholder="Correo Electronico" required>
                <svg class="icons" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-lock-access" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <path d="M4 8v-2a2 2 0 0 1 2 -2h2" />
@@ -59,11 +45,16 @@ $db = conectar(); // Se almacena la conexión en la variable $db
               </svg>
              </div>
 
+             <div class="input">
+
+             <input class="mensaje" type="text" placeholder="Mensaje">
+             </div>
+
 
           
 
 
-             <button class="boton" type="submit">Ingresar</button>
+             <button class="boton" type="submit">Enviar</button>
 
              </form>
 

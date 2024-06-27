@@ -40,16 +40,14 @@
 
 
 
-    //para los elemntos de la derecha
+    //para los elementos de la derecha
    
  
 
     .navegacion2 {
-
         display: flex;
         flex-direction: column;
         margin-top: 2rem;
-
         @include tablet {
             display: flex;
             flex-direction: row;
@@ -65,30 +63,17 @@
             @include tablet {
                 margin-right: 5rem;
             }
-
-
     
             &:hover {
                 color: $principal;
             }
     
-            &:last-of-type {
-                margin: 0;
-            }
         }
     
     }
 
 
-    .dentro {
-        display: none;
-        @include tablet }
-        display: block;
-            
-    }
-
-
-
+}
 
    //para el video
     video {
@@ -385,4 +370,15 @@
     p {
         margin-top: 5rem;
     }
+}
+
+.navegacion {
+    display: none;
+    @include tablet {
+        display: block;
+    }
+}
+
+.mostrar {
+    display: block;
 }

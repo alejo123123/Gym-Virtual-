@@ -9,16 +9,18 @@
 </head>
 <body class="cuerpo">
     <header class="header">
-    <div class="contenedor">
+
+
         <div class="barra">
-            <div class="navegacion">
+            
                 
                 <h1 ><a class="titulo" href="index.php"RegisterGym>RegisterGym</a></h1>
                
-            </div>
+            
             
             <img id='barra' class="esconder desp" src="../../src/img/barras-horizontales.png" alt="">
 
+            <div id="navegacion" class="navegacion">
 
                 <nav id='nav' class="navegacion2 ">
                     <a class="navegador "  href="calculadoras.php">Calculadora</a>
@@ -28,10 +30,10 @@
                 </nav>
 
         
-                
+            </div>     
             
         </div>
         
-    </div>
+    
     <script src="src/js/barra.js"></script>
 </header>

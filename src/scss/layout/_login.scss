@@ -1,140 +1,131 @@
-//generales
+// generales
 .cuerpo {
-
- //color
-    background-image: linear-gradient(to bottom, #395B64 10%,#2C3333 99%);
+    // color
+    background-image: linear-gradient(to bottom, #395B64 10%, #2C3333 99%);
     background-repeat: no-repeat;
-   
-}
-
-
-p {
+  }
+  
+  p {
     color: $gris;
     text-align: center;
     font-weight: 700;
-}
-
-    //general navegador
-      h1 {
-        text-align: center;
-
-        @include tablet {
-            text-align: left;
-        }
-      }
- 
-    
-      
-
-
-//titulo
-.header {
-
-    .titulo {
-        color: $gris;
-        margin: 0;
-        font-weight: 400;
-        margin-left: 1rem;
-        transition: color 0.5s ease;
-
-        //cuando se pase el mause por el titulo
-        &:hover {
-            color: $principal;
-        }
-        
-        //cuando este en un dispositivo grande
-        
+  }
+  
+  // general navegador
+  h1 {
+    text-align: center;
+  
+    @include tablet {
+      text-align: left;
     }
-}
-
-img {
-    //cuando este en un disposiivo mas pequeño
-    width: 30%; 
-    height: 20rem; 
+  }
+  
+  // titulo
+  .header {
+    .titulo {
+      color: $gris;
+      margin: 0;
+      font-weight: 400;
+      margin-left: 1rem;
+      transition: color 0.5s ease;
+  
+      // cuando se pase el mause por el titulo
+      &:hover {
+        color: $principal;
+      }
+    }
+  }
+  
+  img {
+    // cuando este en un dispositivo más pequeño
+    width: 30%;
+    height: 20rem;
     display: flex;
     margin: auto;
     margin-top: 2rem;
-
-    // cuando este en un dispositivo mas grande
-    @include tablet{
-        width: 20rem;
-        height: 20rem;
-       
+  
+    // cuando este en un dispositivo más grande
+    @include tablet {
+      width: 20rem;
+      height: 20rem;
     }
-}
-
-// caja para el login
-.caja {
-    //caracteristicas caja
-        text-align: center;
-        height: 50rem;
-        background-color: $blanco;
-        padding: 50px;
-        margin: 20px;
-        border-radius: 50px;
-        position: relative;
-
-        
-
-        //el espacio donde se escribe
-        input {
-            background: transparent;
-            border: none;
-            outline: none;
-            border-radius: 50px;
-            border: 2px solid $negro;
-            width: 100%;
-            height: 50px;
-            margin-top: 2rem;
-            margin-bottom: 3rem;
-            @include tablet {
-                width: 80%;
-            }
-           
-
-        }
-        //login titulo
-        h1 {
-            text-align: center;
-            text-transform: uppercase;
-            margin: 0;
-        }
-         //los iconos el left 2000 es para que los iconos a llegar a 1270 px se desaparezcan
-        .icons {
-            width: 20%;
-            height: 5rem;
-            margin-top: 2rem;
-            position: absolute;
-            left: 2000px;
-            // se posicionen correctamente
-            @include  iconos {
-                position: absolute;
-                left: 850px;
-                
-            }
-             
-            
-    
-        }
-        //boton de login
-        .boton {
-            width: 70%;
-            height: 5rem;
-            border-radius: 70px;
-            &:hover {
-                color: $blanco;
-                background-color:$principal;
-                cursor: pointer;
-
-            }
-        }
-        }
-      
-        
-    
+  }
+  
+  // caja para el login
+  .caja {
+    // características caja
+    text-align: center;
+    height: 60rem;
+    background-color: $blanco;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 50px;
+    position: relative;
 
   
-    //derechos
-.footer {
+    // el espacio donde se escribe
+    input {
+      background: transparent;
+      border: none;
+      outline: none;
+      border-radius: 50px;
+      border: 2px solid $negro;
+      width: 100%;
+      height: 50px;
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+  
+
+      @include tablet {
+        width: 80%;
+      }
+    }
+  
+
+    // titulo
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+      margin: 0;
+    }
+  
+    
+    // los iconos el left 2000 es para que los iconos a llegar a 1270 px se desaparezcan
+    .icons {
+      width: 20%;
+      height: 5rem;
+      margin-top: 2rem;
+      position: absolute;
+      left: 2000px;
+  
+      // se posicionen correctamente
+      @include iconos {
+        position: absolute;
+        left: 850px;
+      }
+    }
+  
+    // botón de login
+    .boton {
+      width: 70%;
+      height: 5rem;
+      border-radius: 70px;
+  
+      &:hover {
+        color: $blanco;
+        background-color: $principal;
+        cursor: pointer;
+      }
+    }
+  
+    // mensaje más alto
+    .mensaje {
+      height: 80px; // altura aumentada
+    }
+  }
+  
+  // derechos
+  .footer {
     margin-top: 11rem;
-}
+  }
+  

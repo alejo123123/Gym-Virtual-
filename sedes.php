@@ -8,6 +8,9 @@ include 'includes/templates/header.php'; // Se incluye el encabezado de la pági
 $db = conectar(); // Se almacena la conexión en la variable $db
 ?>
 <body>
+
+
+<div class="margen">
     <!-- sedes -->
     <div class="sedees">
     <h1>Nuestras Sedes</h1>
@@ -85,7 +88,7 @@ $db = conectar(); // Se almacena la conexión en la variable $db
     
     
     </div>
-    
+</div>
     <!-- footer -->
 <footer class="footer">
  <p>Powered By AlejoTyson</p>

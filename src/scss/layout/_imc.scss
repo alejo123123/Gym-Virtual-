@@ -87,9 +87,11 @@
   
     //para lo que esta dentro de la tabla
     table {
-        // margin-left: 30%;
-        padding: 10rem;
-        margin: auto;
+        padding: 2rem;
+        @include tablet {
+            padding: 10rem;
+            margin: auto;
+        }
        
        //para el titulo
         .th {

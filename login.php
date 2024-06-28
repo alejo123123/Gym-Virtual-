@@ -1,9 +1,12 @@
 <?php
 include 'includes/templates/header.php';
-require 'includes/config/database.php'; // Se incluye el archivo de configuración de la base de datos
-require 'includes/app.php'; // Se incluye el archivo principal de la aplicación
-$db = conectar(); // Se almacena la conexión en la variable $db
+require 'includes/config/database.php';
+require 'includes/app.php';
+
+conectar();
+insertar();
 ?>
+
 
 
             <!-- logo -->
@@ -17,7 +20,7 @@ $db = conectar(); // Se almacena la conexión en la variable $db
         <form action="index.php" method="POST">
 
              <div class="input">
-                <input id="correo" type="text" placeholder="Nombre" required>
+                <input id="nombre" name="nombre"  type="text" placeholder="Nombre" required>
                 <svg class="icons" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-hexagon" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <path d="M12 13a3 3 0 1 0 0 -6a3 3 0 0 0 0 6z" />
@@ -28,7 +31,7 @@ $db = conectar(); // Se almacena la conexión en la variable $db
 
 
              <div class="input">
-               <input id="contra" type="text" placeholder="Correo Electronico" required>
+               <input id="correo" name="correo" type="text" placeholder="Correo Electronico" required>
                <svg class="icons" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-lock-access" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <path d="M4 8v-2a2 2 0 0 1 2 -2h2" />
@@ -42,23 +45,21 @@ $db = conectar(); // Se almacena la conexión en la variable $db
 
              <div class="input">
 
-             <input class="mensaje" type="text" placeholder="Mensaje">
+             <input class="mensaje" type="text" name="mensaje" placeholder="Mensaje">
              </div>
 
 
           
 
 
-             <button class="boton" type="submit">Enviar</button>
+             <button class="boton" name="enviar" type="submit">Enviar</button>
 
              </form>
 
          </div>
         </main>
-       
-
-        <!-- derechos -->
-        <?php
+<?php      
+insertar();
  include 'includes/templates/footer.php';
 ?>
 

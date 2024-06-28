@@ -126,7 +126,7 @@ function obtenerdatoemp() {
         $consulta = mysqli_query($db, $sql);
         
         // Verificar si se obtuvieron resultados
-        if ($consulta && mysqli_num_rows($consulta) > 0) { //revisar si el numero de filas es mayor a 0 para que se devuelva almenos 1 fila
+       if ($consulta && mysqli_num_rows($consulta) > 0) { //revisar si el numero de filas es mayor a 0 para que se devuelva almenos 1 fila
             return $consulta; // Devolver los resultados de la consulta
         } else {
             return false; // Devolver false si no se encontraron resultados
@@ -140,29 +140,35 @@ function obtenerdatoemp() {
 }
 
 
-// function insertarUsuario($correo, $contrasena) {
-//     global $db;
-//     try {
-//         // Preparar la consulta SQL para insertar los datos del usuario
-//         $sql = "INSERT INTO usuarios (U_correo, U_contra) VALUES ('$correo', '$contrasena') FROM gimnasio";
+
+function insertar () {
+    global $db; 
+ try {
+    if (isset($_POST['enviar'])) {
+        $nombre = $_POST['nombre'];
+        $correo = $_POST['correo'];
+        $mensaje = $_POST['mensaje'];
+
+
+        $sql = "INSERT INTO usuarios (U_nombre, U_correo, U_mensaje) VALUES ('$nombre', '$correo', '$mensaje')";
+
+        $consulta = mysqli_query($db, $sql);
         
-//         // Ejecutar la consulta
-//         if (mysqli_query($db, $sql)) {
-//             echo "Usuario registrado correctamente";
-//         } else {
-//             echo "Error al registrar el usuario: " . mysqli_error($db);
-//         }
-//     } catch (\Throwable $th) {
-//         // Manejar cualquier error que ocurra durante la inserción
-//         echo "Error al registrar el usuario: " . $th->getMessage();
-//     }
-// }
+        // Verificar si se obtuvieron resultados
+        if ($consulta){
+            //los datos ingresaron a la bd
+                        echo "<script>alert('Los datos fueron ingresados correctamente a la BD');</script>";
+               } else {
+                        echo "<script>alert('ERROR: Los datos NO fueron ingresados a la BD');</script>";
+            }
+        
+                    echo "<script>location.assign('index.php');</script>";
+        
+            }
 
-// // Llamar a la función insertarUsuario si se reciben datos del formulario
-// if ($_SERVER["REQUEST_METHOD"] == "POST") {
-//     $correo = $_POST['correo'];
-//     $contrasena = $_POST['contrasena'];
+ } catch (\Throwable) {
+   echo "error";
+ }
+}
 
-//     insertarUsuario($correo, $contrasena);
-// }
 ?>

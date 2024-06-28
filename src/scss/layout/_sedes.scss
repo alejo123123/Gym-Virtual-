@@ -25,7 +25,7 @@
             font-size: 2.5rem; 
         }
         
-        color: #FF69B4;
+        color: $blanco;
         font-size: 2.3rem; 
        
        
@@ -49,11 +49,12 @@
 }
 
 .plan-sedes {
-
-    background-image: url("../../../src/img/cubogd.png");
+    background-color: $negro;
+    background-image: url("../../../src/img/gimnasio.png");
     background-size: 50% 100%;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 25px;
 
     @include tablet {
         background-image: url("../../../src/img/cropped-1920-1080-692043.jpg");
@@ -64,6 +65,7 @@
         margin-right: 10rem;
         margin-bottom: 5rem;
         margin-top: 2rem;
+   
                 &:first-of-type {
                     margin-right: 0;
                 }
@@ -77,6 +79,15 @@
 
 
 .elemento3 {
+
+    margin-left: 0;
+    margin-right: 0;
+
+    @include tablet {
+        margin-left: 10rem;
+    margin-right: 10rem;
+
+    }
     p {
         @include tablet {
             color: $blanco;
@@ -84,18 +95,19 @@
             font-size: 2.5rem; 
         }
         
-        color: #FF69B4;
+        color: $blanco;
         font-size: 2.3rem; 
        
        
     }
     .plan-sedes2 {
-        // padding-bottom: 7rem;
-        // padding-top: 5px;
-        background-image: url("../../../src/img/cubogd.png");
-        background-size: 80% 100%;
+       
+        background-color: $negro;
+        background-image: url("../../../src/img/gimnasio.png");
+        background-size: 50% 100%;
         background-position: center;
         background-repeat: no-repeat;
+        border-radius: 25px;
 
          h3 {
             color: $amarillo;
@@ -120,15 +132,12 @@
         background-size: 100%;
         background-position: center;
          background-repeat: no-repeat;
-
-    
        
     }
 
     }
    
-    margin-left: 10rem;
-    margin-right: 10rem;
+  
     
 
 }

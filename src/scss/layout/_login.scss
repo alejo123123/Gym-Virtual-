@@ -1,131 +1,106 @@
 // generales
 .cuerpo {
-    // color
-    background-image: linear-gradient(to bottom, #395B64 10%, #2C3333 99%);
-    background-repeat: no-repeat;
-  }
-  
-  p {
-    color: $gris;
-    text-align: center;
-    font-weight: 700;
-  }
-  
-  // general navegador
-  h1 {
-    text-align: center;
-  
-    @include tablet {
+  background-image: linear-gradient(to bottom, #395B64 10%, #2C3333 99%);
+  background-repeat: no-repeat;
+}
+
+p {
+  color: $gris; // Asegúrate de que $gris está definido en variables.scss
+  text-align: center;
+  font-weight: 700;
+}
+
+// general navegador
+h1 {
+  text-align: center;
+  @include tablet { // Asegúrate de que el mixin tablet está definido
       text-align: left;
-    }
   }
-  
-  // titulo
-  .header {
-    .titulo {
-      color: $gris;
-      margin: 0;
-      font-weight: 400;
-      margin-left: 1rem;
-      transition: color 0.5s ease;
-  
-      // cuando se pase el mause por el titulo
-      &:hover {
-        color: $principal;
-      }
-    }
+}
+
+// titulo
+.titulo {
+  color: $gris; // Asegúrate de que $gris está definido
+  margin: 0;
+  font-weight: 400;
+  margin-left: 1rem;
+  transition: color 0.5s ease;
+
+  &:hover {
+      color: $principal; // Asegúrate de que $principal está definido
   }
-  
-  img {
-    // cuando este en un dispositivo más pequeño
-    width: 30%;
-    height: 20rem;
-    display: flex;
-    margin: auto;
-    margin-top: 2rem;
-  
-    // cuando este en un dispositivo más grande
-    @include tablet {
+}
+
+// header
+ img {
+  width: 30%;
+  height: 20rem;
+  display: flex;
+  margin: auto;
+  margin-top: 2rem;
+
+  @include tablet { // Asegúrate de que el mixin tablet está definido
       width: 20rem;
       height: 20rem;
-    }
   }
-  
-  // caja para el login
-  .caja {
-    // características caja
-    text-align: center;
-    height: 60rem;
-    background-color: $blanco;
-    padding: 50px;
-    margin: 20px;
-    border-radius: 50px;
-    position: relative;
+}
 
-  
-    // el espacio donde se escribe
-    input {
+// caja para el login
+.caja {
+  text-align: center;
+  height: 60rem;
+  background-color: $blanco; // Asegúrate de que $blanco está definido
+  padding: 50px;
+  margin: 20px;
+  border-radius: 50px;
+  position: relative;
+
+  input {
       background: transparent;
       border: none;
       outline: none;
       border-radius: 50px;
-      border: 2px solid $negro;
+      border: 2px solid $negro; // Asegúrate de que $negro está definido
       width: 100%;
       height: 50px;
       margin-top: 2rem;
       margin-bottom: 3rem;
-  
 
-      @include tablet {
-        width: 80%;
+      @include tablet { // Asegúrate de que el mixin tablet está definido
+          width: 80%;
       }
-    }
-  
+  }
 
-    // titulo
-    h1 {
+  h1 {
       text-align: center;
       text-transform: uppercase;
       margin: 0;
-    }
-  
-    
-    // los iconos el left 2000 es para que los iconos a llegar a 1270 px se desaparezcan
-    .icons {
+  }
+
+  .icons {
       width: 20%;
       height: 5rem;
       margin-top: 2rem;
       position: absolute;
       left: 2000px;
-  
-      // se posicionen correctamente
-      @include iconos {
-        position: absolute;
-        left: 850px;
+
+      @include iconos { // Asegúrate de que el mixin iconos está definido
+          left: 850px;
       }
-    }
-  
-    // botón de login
-    .boton {
+  }
+
+  .boton {
       width: 70%;
       height: 5rem;
       border-radius: 70px;
-  
+
       &:hover {
-        color: $blanco;
-        background-color: $principal;
-        cursor: pointer;
+          color: $blanco; // Asegúrate de que $blanco está definido
+          background-color: $principal; // Asegúrate de que $principal está definido
       }
-    }
-  
-    // mensaje más alto
-    .mensaje {
+  }
+
+  .mensaje {
       height: 80px; // altura aumentada
-    }
   }
-  
-  // derechos
-  .footer {
-    margin-top: 11rem;
-  }
-  
+}

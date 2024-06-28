@@ -1,15 +1,14 @@
 
-
 .caja2 {
     //caracteristicas caja 2
         text-align: center;
         height: 50rem;
-        width: 80%;
         background-color: $grisOscuro;
         padding: 20px;
         border-radius: 50px;
-        margin-left:10%;
-        margin-bottom: 40rem;
+        margin-bottom: 20rem;
+        margin-left:5%;
+        margin-right:5%;
         margin-top: 10rem;
   
        //grueso en el input
@@ -17,25 +16,17 @@
             font-weight: 700;
         }
         
-
-        //en pc
+            //en pc
         @include tablet {
-        // margin-bottom: 16rem;
-        // margin-top: 20rem;
-        // margin-left: 37rem;
-        // margin: auto;
         padding: 60px;
         width: 80%;
+        margin-left:auto;
+        margin-right:auto;
         }
 
       
 
-        //imagen
-        .img2 {
-            margin-bottom: 10rem;
-            height: 13rem;
-            width: 15rem; 
-        }
+       
        
         
         //contiene los campos
@@ -75,20 +66,13 @@
            .libras {
             margin-top: 1rem;
         }
-        
-        
-    }
-    //parte del footer 
-    .footer2 {
-        margin-top: 10rem;
-        @include tablet {
-            
 
-            p {
-                padding-top: 21rem;
-                margin-top: 21rem;
-            }
+        .img2 {
+            height: 15rem;
         }
+        
+        
     }
+
 
 

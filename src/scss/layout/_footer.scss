@@ -1,0 +1,30 @@
+
+.foot {
+    margin-top: 4rem;
+    background-color:$negro; 
+
+    .conoce {
+        // Espacio entre el título y la imagen
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        padding: 2rem; 
+
+        nav {
+            display: flex; 
+            width: 100%; 
+            justify-content: space-between; 
+
+            .iconos {
+                margin-right: 2rem;
+                display: flex; 
+                //empuja los iconos al final
+                justify-content: flex-end; 
+                img {
+                    height: 5rem;
+                    width: auto; 
+                }
+            }
+        }
+    }
+}

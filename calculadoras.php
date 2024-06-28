@@ -30,7 +30,7 @@
 
     <a class="lb" href="calculadora.php">
         <div class="lb" >
-        <h2>Calculadora Lb a Kg</h2>
+        <h2>Calculadora Lb Kg</h2>
         </a>
       </div>
   </div>
@@ -39,7 +39,7 @@
     
 </div>
 
-    <footer class="footer">
-      <p>Powered by Ganadero</p>
-    </footer>
+<?php
+ include 'includes/templates/footer.php';
+?>
 </body>

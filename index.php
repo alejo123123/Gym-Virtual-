@@ -69,11 +69,13 @@ $db = conectar(); // Se almacena la conexión en la variable $db
  include 'includes/templates/empleados.php';
 ?>
 
+</div>
 <!-- footer -->
-<footer class="footmain">
-    <p>Hecho Por El Equipo</p>
-</footer>
+
+<?php
+ include 'includes/templates/footer.php';
+?>
     <script src="src/js/barra.js"></script>
-    </div>
+    
 </body>
 </html>

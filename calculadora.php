@@ -22,15 +22,18 @@
         <!-- Este es el campo de entrada para los kilos -->
 
         <input id='kilos' class="campos kilos" type="number" placeholder="kilos" required>
-    </div>
 
+        <img src="src/img/maquina-de-gimnasio.png" class="img2" alt="logo">
+    </div>
+</main>
 <!-- footer -->
 
-<footer class="footer2">
- <p>Powered By AlejoMasterGG</p>
-</footer>
+<?php
+ include 'includes/templates/footer.php';
+?>
 
 
     <script src="./src/js/calculadoralb.js"></script>
+
 </body>
 </html>

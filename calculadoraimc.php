@@ -52,10 +52,10 @@
             </table>
         </main>S
     </div>
-        <footer>
-            <p>Powered By AleSexo</p>
-        </footer>
 
+    <?php
+ include 'includes/templates/footer.php';
+?>
     <!-- <script type="module" src="build/js/bundle.min.js"></script> -->
     <script src="./src/js/calculadoraimc.js"></script>
 </body>

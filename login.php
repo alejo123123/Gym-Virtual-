@@ -1,25 +1,20 @@
 <?php
-
+include 'includes/templates/header.php';
 require 'includes/config/database.php'; // Se incluye el archivo de configuración de la base de datos
 require 'includes/app.php'; // Se incluye el archivo principal de la aplicación
-// Establecer conexión a la base de datos utilizando la función conectar() definida en database.php
 $db = conectar(); // Se almacena la conexión en la variable $db
 ?>
 
-<?php 
-
-include 'includes/templates/header.php';
-?>
 
             <!-- logo -->
-          <img src="src/img/maquina-de-gimnasio.png" class="img" alt="logo">
+<img src="src/img/maquina-de-gimnasio.png" class="img" alt="logo">
 
-<!-- el login -->
-        <main class="login contenedor">
+        <!-- el login -->
+<main class="login contenedor">
          <div class="caja">
-             <h1>Contacto</h1>
+           <h1>Contacto</h1>
 
-<form action="index.php" method="POST">
+        <form action="index.php" method="POST">
 
              <div class="input">
                 <input id="correo" type="text" placeholder="Nombre" required>
@@ -63,9 +58,9 @@ include 'includes/templates/header.php';
        
 
         <!-- derechos -->
-        <footer class="footer">
-            <p>Todos los Derechos Reservados</p>
-        </footer>
+        <?php
+ include 'includes/templates/footer.php';
+?>
 
     <script src="./src/js/login.js"></script>
 </body>

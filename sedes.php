@@ -90,8 +90,8 @@ $db = conectar(); // Se almacena la conexión en la variable $db
     </div>
 </div>
     <!-- footer -->
-<footer class="footer">
- <p>Powered By AlejoTyson</p>
-</footer>
+    <?php
+ include 'includes/templates/footer.php';
+?>
 </body>
 </html>

@@ -93,6 +93,7 @@ h1 {
       width: 70%;
       height: 5rem;
       border-radius: 70px;
+      cursor: pointer;
 
       &:hover {
           color: $blanco; // Asegúrate de que $blanco está definido

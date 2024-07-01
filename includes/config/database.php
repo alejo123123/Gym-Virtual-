@@ -10,11 +10,6 @@ function conectar() : mysqli {
   return $db;
 }
 
-// Asignar el resultado de conectar() a una variable
-$db = conectar();
-
-
-
 
 //funcion para extraer datos
 
@@ -140,35 +135,24 @@ function obtenerdatoemp() {
 }
 
 
-
-function insertar () {
-    global $db; 
- try {
-    if (isset($_POST['enviar'])) {
-        $nombre = $_POST['nombre'];
-        $correo = $_POST['correo'];
-        $mensaje = $_POST['mensaje'];
-
-
-        $sql = "INSERT INTO usuarios (U_nombre, U_correo, U_mensaje) VALUES ('$nombre', '$correo', '$mensaje')";
-
-        $consulta = mysqli_query($db, $sql);
+function insertar() {
+    global $db;
+    if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["enviar"])) {
+        $nombre = $_POST["nombre"];
+        $correo = $_POST["correo"];
+        $mensaje = $_POST["mensaje"];
         
-        // Verificar si se obtuvieron resultados
-        if ($consulta){
-            //los datos ingresaron a la bd
-                        echo "<script>alert('Los datos fueron ingresados correctamente a la BD');</script>";
-               } else {
-                        echo "<script>alert('ERROR: Los datos NO fueron ingresados a la BD');</script>";
-            }
-        
-                    echo "<script>location.assign('index.php');</script>";
-        
-            }
-
- } catch (\Throwable) {
-   echo "error";
- }
+        $sql = $db->query("INSERT INTO usuarios(U_nombre,U_correo,U_mensaje) VALUES('$nombre','$correo','$mensaje')");
+    
+        if ($sql==1) {
+            echo'bien';
+        }
+     else {
+        echo 'error';
+    }
+    
+    } else {
+        echo 'error';
+    }
 }
-
 ?>

@@ -10,13 +10,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["enviar"])) {
     $sql = $conexion->query("INSERT INTO usuarios(U_nombre,U_correo,U_mensaje) VALUES('$nombre','$correo','$mensaje')");
 
     if ($sql==1) {
-        echo'bien';
+        echo'<p class=comentario>Enviado Correctamente</p>';
     }
  else {
-    echo 'error';
+    echo'<p class=error>Error al Enviar</p>';
 }
 
-} else {
-    echo 'error';
-}
+} 
 ?>

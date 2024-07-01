@@ -11,6 +11,7 @@ require 'includes/config/database.php';
 <!-- el login -->
 <main class="login contenedor">
     <div class="caja">
+        <a class="mensajeria" href="mensajeria.php">Revisar Mensajes</a>
         <h1>Contacto</h1>
 
         <form action="login.php" method="POST">

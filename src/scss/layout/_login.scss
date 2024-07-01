@@ -48,7 +48,6 @@ h1 {
 // caja para el login
 .caja {
   text-align: center;
-  height: 60rem;
   background-color: $blanco; // Asegúrate de que $blanco está definido
   padding: 50px;
   margin: 20px;
@@ -104,4 +103,28 @@ h1 {
   .mensaje {
       height: 80px; // altura aumentada
   }
+}
+
+.comentario {
+  margin-top: 5rem;
+  color: $negro;
+  background-color: greenyellow;
+  padding: 1rem;
+  border-radius: 25px;
+ 
+}
+
+.error{
+  margin-top: 2rem;
+  color: $negro;
+  background-color: red;
+  padding: 1rem;
+  border-radius: 25px;
+ 
+}
+
+
+.mensajeria {
+  text-align: right;
+  margin-left: 85rem;
 }

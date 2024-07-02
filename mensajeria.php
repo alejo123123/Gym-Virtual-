@@ -25,4 +25,10 @@ require 'includes/config/database.php';
     </tbody>
         </table>
         </div>
+
 </main>
+<?php
+include 'includes/templates/footer.php'
+?>
+</body>
+</html>

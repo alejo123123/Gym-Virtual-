@@ -1,14 +1,21 @@
 main {
 
-margin-bottom: 100rem;
+margin-bottom: 20rem;
+
+@include tablet {
+    margin-bottom: 20rem;
+}
 
 .tabla2 {
     margin: 2rem;
+    margin-top: 6rem;
     background-color: $blanco; 
-    height: 80%;
+    padding-bottom: 5rem ;
+    height:auto;
+
     @include tablet {
-        margin-left: 30rem;
-        margin-right: 30rem;
+        margin-left: 5%;
+        margin-right: 5%;
         margin-top: 8rem;
         padding-top: 2rem;
         height: 80rem;
@@ -21,9 +28,8 @@ margin-bottom: 100rem;
         padding: 1rem;
 
         @include tablet {
-        margin-left: 20rem;
-        padding: 5rem;
-        gap: 5rem;
+        padding: 3rem;
+       
         }
 
         .nom {
@@ -31,22 +37,23 @@ margin-bottom: 100rem;
         }
 
         thead {
-            margin-left: 10rem;
+        
             border-bottom: 1px solid black;
 
             th {
-        
                 padding-bottom: 2rem;
                 border-bottom: 1px solid black;
             }
         }
 
         tbody {
+            tr {
+                margin-right: 3rem;
+            }
+
+
             td {
-               
-                padding: 1rem;
-                margin-bottom: auto;
-                margin-left: auto;
+                padding: 2rem;
                 border-bottom: 1px solid black;  // Asegúrate de que los <tr> en el <tbody> también tienen borde
             }
         }
